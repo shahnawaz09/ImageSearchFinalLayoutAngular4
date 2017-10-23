@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.navbar-fixed-top{
+    z-index: 900 !important;
+}
+.col-button{
+    text-align: center;
+}
+.employee-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.mat-form-field {
+    min-height: 5.3em;
+}
+.navbar-inverse {
+  background-color: #2A3F54 !important;
+  
+}
+.sidebar {
+  background-color: #192532 !important;
+  border-right: none !important;
+}
+.sidebar ul li a{
+  color: #f1f1f1 !important;
+}
+.sidebar ul li a:hover{
+  color: #2A3F54 !important;
+}
+.nav-sidebar > .active > a:hover{
+  color:#fff !important;
+}
+.navbar-fixed-top {
+  border-bottom: 1px solid #2A3F54 !important;
+}
+.shadow {
+    -moz-box-shadow: 0px 5px 10px rgba(41, 40, 40, 0.5);
+    -webkit-box-shadow: 0px 5px 10px rgba(41, 40, 40, 0.5);
+    box-shadow: 0px 5px 10px rgba(41, 40, 40, 0.5);
+}     
+.main{
+  margin-top: 28px;
+}
+.ui-widget-content,.ui-widget-header,.ui-column-title{
+  color: #565656 !important;
+  font-family: 'Open Sans', sans-serif !important;
+}
+/* Scrollbar styling */
+::-webkit-scrollbar{width:9px;height:9px;}
+::-webkit-scrollbar-button:start:decrement,#doc ::-webkit-scrollbar-button:end:increment{display:block;height:0;background-color:transparent;}
+::-webkit-scrollbar-track-piece{background-color:#FAFAFA;-webkit-border-radius:0;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;}
+::-webkit-scrollbar-thumb:vertical{height:50px;background-color:#999;-webkit-border-radius:8px;}
+::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#999;-webkit-border-radius:8px;}
+
+/* background gradient to body */
+/* html {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: rgb(240,249,255); 
+  background: -moz-linear-gradient(top, rgba(166, 178, 191, 0.08) 0%, rgba(199, 210, 226) 100%); 
+  background: -webkit-linear-gradient(top, rgba(166, 178, 191, 0.08) 0%,rgba(199, 210, 226) 100%); 
+  background: linear-gradient(to bottom, rgba(166, 178, 191, 0.08) 0%,rgba(199, 210, 226) 100%); 
+  background-attachment: fixed;
+} */
+
+body{
+  background-color: transparent!important;
+  color: #565656;
+  font-weight: 400 !important;
+  font-family: 'Open Sans', sans-serif !important;
+  line-height: 125% !important;
+  font-size: 1.3rem !important;
+}
+

@@ -1,0 +1,27 @@
+select * from login;
+select userName from login where userid=2;
+insert into login (userid,userName) values ('1','john');
+update login set userName= 'ram', userid='4' where userName='john';
+delete from login where userid=4;
+select userName from login;
+insert into login (userid,userName) values('5','john');
+select count(distinct userName) from login;
+select * from login order by userName asc;
+select top 2 * from login;
+
+create database test2;
+create table test2 (PersonId int,FirstName varchar(255),LastName varchar(255),Address varchar(255),City varchar(255));
+select * from test2;
+insert into test2 (PersonId,FirstName,LastName,Address,City) values('1','sam','alex','xyz 123','california');
+drop table test2;
+truncate table test2;
+alter table test2 add gender varchar;
+alter table test2 drop column gender; 
+create table testDg (id int NOT NULL PRIMARY KEY,firstName varchar(255) NOT NULL,lastName varchar(50) NOT NULL,address varchar(40));
+select * from testDg;
+insert into testDg (id,firstName,lastName,address) values(4,'alex','bush','xyz');
+create table testOrderForgn (orderID int not null Primary Key,orderNO int not null,id int foreign key REFERENCES testDg(id));
+SELECT * FROM testOrderForgn;
+INSERT INTO testOrderForgn (orderID,orderNO,id) VALUES(3,4435,4);
+UPDATE testOrderForgn SET orderNO=222 WHERE orderID=3;
+DELETE FROM testOrderForgn WHERE orderID=3;
